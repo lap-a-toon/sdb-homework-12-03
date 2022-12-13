@@ -14,12 +14,12 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "ubuntu/bionic64"
-  config.vm.host_name = "lexx-sdb-homework-12-02"
+  config.vm.host_name = "lexx-sdb-homework-12-03"
   config.vm.provider :virtualbox do |vb|
-    vb.name = "ubuntu-sdb-homework-12-02"
+    vb.name = "ubuntu-sdb-homework-12-03"
     vb.customize ["modifyvm", :id, "--nested-hw-virt", "on"]
   end
-  config.vm.hostname = "ubuntu-sdb-homework-12-02"
+  config.vm.hostname = "ubuntu-sdb-homework-12-03"
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
@@ -62,8 +62,8 @@ Vagrant.configure("2") do |config|
   #   vb.gui = true
   #
   #   # Customize the amount of memory on the VM:
-     vb.cpus = 4
-     vb.memory = "4096"
+     vb.cpus = 2
+     vb.memory = "2048"
    end
   #
   # View the documentation for the provider you are using for more
